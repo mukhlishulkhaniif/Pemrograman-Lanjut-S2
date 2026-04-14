@@ -13,6 +13,14 @@ Aplikasi kalkulator GUI interaktif yang dirancang untuk menangani perhitungan ma
 * **Logika DataTable Engine**: Memanfaatkan `System.Data` untuk menghitung ekspresi matematika kompleks dari teks secara otomatis.
 * **Validasi & Error Handling**: Dilengkapi dengan sistem `try-catch` untuk mencegah aplikasi crash jika terjadi kesalahan input rumus.
 * **Antarmuka User-Friendly**: Menggunakan *Event Sharing* agar navigasi tombol angka dan operator terasa responsif dan efisien.
+  
+#### 2. Game Mencocokkan Gambar (Matching Game)
+Game asah otak sederhana di mana pemain harus menemukan pasangan gambar yang sama di balik kotak yang tertutup.
+
+* **Sistem Acak Gambar**: Menggunakan algoritma `Random` untuk mengacak posisi ikon `Webdings` setiap kali game dimulai.
+* **Logika Pencocokan**: Menggunakan variabel `firstClicked` dan `secondClicked` untuk membandingkan dua kotak yang dipilih pemain.
+* **Fitur Delay Timer**: Implementasi `Timer` untuk memberikan jeda waktu agar pemain bisa melihat gambar sebelum tertutup otomatis jika tidak cocok.
+* **Win Detection**: Sistem pengecekan otomatis yang memicu pesan kemenangan (`MessageBox`) ketika seluruh pasangan gambar berhasil ditemukan.
 
 ---
 
