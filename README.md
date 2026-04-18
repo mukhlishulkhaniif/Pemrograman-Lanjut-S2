@@ -22,6 +22,13 @@ Game asah otak sederhana di mana pemain harus menemukan pasangan gambar yang sam
 * **Fitur Delay Timer**: Implementasi `Timer` untuk memberikan jeda waktu agar pemain bisa melihat gambar sebelum tertutup otomatis jika tidak cocok.
 * **Win Detection**: Sistem pengecekan otomatis yang memicu pesan kemenangan (`MessageBox`) ketika seluruh pasangan gambar berhasil ditemukan.
 
+#### 3. Game Mencocokkan Gambar (Matching Game)
+Aplikasi untuk memvisualisasikan cara kerja berbagai algoritma pengurutan dan pencarian data secara real-time.
+* **Variasi Algoritma**: Implementasi algoritma pengurutan meliputi `Bubble Sort`, `Selection Sort`, `Insertion Sort`, dan `Counting Sort`, serta metode pencarian `Sequential Search` dan `Binary Search`.
+* **Visualisasi Bertahap**: Menyediakan fitur penelusuran langkah demi langkah (step-by-step) dengan indikator warna tematik: **kuning** untuk proses perbandingan data dan **merah** untuk proses pertukaran posisi.
+* **Kontrol Eksekusi**: Tersedia fitur pemutaran otomatis auto-play dengan pengaturan kecepatan yang dapat disesuaikan melalui komponen `TrackBar`.
+* **Analisis Komparatif**: Menyediakan ringkasan performa pada akhir proses untuk membandingkan efisiensi antar-algoritma berdasarkan jumlah perbandingan dan frekuensi pertukaran data yang dilakukan.
+
 ---
 
 ### 🚀 Cara Menjalankan
