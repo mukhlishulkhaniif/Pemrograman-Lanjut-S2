@@ -1,0 +1,11 @@
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\obj\Debug\TugasPemrograman.csproj.AssemblyReference.cache
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\obj\Debug\TugasPemrograman.Form1.resources
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\obj\Debug\TugasPemrograman.Properties.Resources.resources
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\obj\Debug\TugasPemrograman.csproj.GenerateResource.cache
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\obj\Debug\TugasPemrograman.csproj.CoreCompileInputs.cache
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\bin\Debug\TugasPemrograman.exe.config
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\bin\Debug\TugasPemrograman.exe
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\bin\Debug\TugasPemrograman.pdb
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\obj\Debug\TugasPemrograman.exe
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\obj\Debug\TugasPemrograman.pdb
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\TugasPemrograman\obj\Debug\TugasPemrograman.exe.config
