@@ -1,0 +1,10 @@
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\SearchingShorting\bin\Debug\SearchingShorting.exe.config
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\SearchingShorting\bin\Debug\SearchingShorting.exe
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\SearchingShorting\bin\Debug\SearchingShorting.pdb
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\SearchingShorting\obj\Debug\SearchingShorting.csproj.AssemblyReference.cache
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\SearchingShorting\obj\Debug\SearchingShorting.Properties.Resources.resources
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\SearchingShorting\obj\Debug\SearchingShorting.csproj.GenerateResource.cache
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\SearchingShorting\obj\Debug\SearchingShorting.csproj.CoreCompileInputs.cache
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\SearchingShorting\obj\Debug\SearchingShorting.exe
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\SearchingShorting\obj\Debug\SearchingShorting.pdb
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\SearchingShorting\obj\Debug\SearchingShorting.exe.config
