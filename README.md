@@ -12,4 +12,4 @@ Repository ini berisi dokumentasi tugas praktikum saya selama **Semester 2**. Tu
 4. **Tekan F5** atau klik tombol **Start** untuk menjalankan aplikasi.
 
 ---
-*Dibuat dengan semangat belajar oleh Ragasa - 2026*
+*Dibuat dengan semangat belajar oleh Khaniif - 2026*
