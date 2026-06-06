@@ -435,6 +435,44 @@ namespace SearchingShorting
 
             currentStep = 0; TampilkanDataGrid(0);
         }
+        // BRUTE FORCE SEARCH: mencari Nilai (Angka)
+        void JalankanBruteForceSearch(int nilaiCari)
+        {
+            ResetData();
+            string[] n = (string[])namaAwal.Clone();
+            int[] v = (int[])nilaiAwal.Clone();
+            int panjang = v.Length, langkah = 0;
+            List<int> hasilDitemukan = new List<int>();
+
+            for (int i = 0; i < panjang; i++)
+            {
+                langkah++;
+
+                // Langsung bandingkan nilai di array dengan nilai yang dicari
+                if (v[i] == nilaiCari)
+                {
+                    hasilDitemukan.Add(i);
+                    SimpanLangkah(v, n, new int[] { }, new int[] { }, hasilDitemukan.ToArray(),
+                        $"Ditemukan nilai {nilaiCari} di indeks {i}.");
+                }
+                else
+                {
+                    // Kasih warna kuning (indeks i) buat tanda lagi diperiksa
+                    SimpanLangkah(v, n, new int[] { i }, new int[] { }, hasilDitemukan.ToArray(),
+                        $"Cek indeks {i}: {v[i]} bukan {nilaiCari}.");
+                }
+            }
+
+            int[] semuaHijau = hasilDitemukan.ToArray();
+            SimpanLangkah(v, n, new int[] { }, new int[] { }, semuaHijau, $"Brute Force selesai. Total langkah: {langkah}.");
+
+            lblPerbandingan.Text = $"Langkah: {langkah}";
+            lblPertukaran.Text = hasilDitemukan.Count > 0 ? $"Ketemu di indeks: {string.Join(", ", hasilDitemukan)}" : "Tidak ditemukan";
+
+            currentStep = 0;
+            TampilkanDataGrid(0);
+        }
+
         // Tampilkan rekap performa ke tabel kanan
         void TampilkanTabelPerbandingan()
         {
@@ -476,6 +514,18 @@ namespace SearchingShorting
         private void btnBinary_Click(object sender, EventArgs e) { if (int.TryParse(txtCari.Text, out int val)) JalankanBinarySearch(val); }
         private void btnTabelPerbandingan_Click(object sender, EventArgs e) { TampilkanTabelPerbandingan(); }
 
-        
+        // Tombol baru untuk Brute Force
+        private void btnBruteForce_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtCari.Text, out int val))
+            {
+                JalankanBruteForceSearch(val);
+            }
+            else
+            {
+                MessageBox.Show("Masukkan angka yang valid!");
+                txtCari.Focus();
+            }
+        }
     }
 }

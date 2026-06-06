@@ -58,6 +58,7 @@
             this.txtCari = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.trackBarKecepatan = new System.Windows.Forms.TrackBar();
+            this.btnBruteForce = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -318,6 +319,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.btnBruteForce);
             this.groupBox4.Controls.Add(this.btnBinary);
             this.groupBox4.Controls.Add(this.btnSequential);
             this.groupBox4.Controls.Add(this.txtCari);
@@ -374,7 +376,16 @@
             this.trackBarKecepatan.TabIndex = 4;
             this.trackBarKecepatan.Value = 1;
             this.trackBarKecepatan.Scroll += new System.EventHandler(this.trackBarKecepatan_Scroll);
-            //
+            // 
+            // btnBruteForce
+            // 
+            this.btnBruteForce.Location = new System.Drawing.Point(278, 75);
+            this.btnBruteForce.Name = "btnBruteForce";
+            this.btnBruteForce.Size = new System.Drawing.Size(182, 39);
+            this.btnBruteForce.TabIndex = 5;
+            this.btnBruteForce.Text = "Brute Force";
+            this.btnBruteForce.UseVisualStyleBackColor = true;
+            this.btnBruteForce.Click += new System.EventHandler(this.btnBruteForce_Click);
             // 
             // Form1
             // 
@@ -438,6 +449,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.Button btnBruteForce;
     }
 }
 
