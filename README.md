@@ -7,7 +7,7 @@ Repository ini berisi dokumentasi tugas praktikum saya selama **Semester 2**. Tu
 ### 🚀 Cara Menjalankan
 
 1. **Clone** repository ini ke komputer kamu.
-2. **Buka** folder project Kalkulator.
+2. **Buka** folder project.
 3. **Jalankan** file `.sln` menggunakan Visual Studio.
 4. **Tekan F5** atau klik tombol **Start** untuk menjalankan aplikasi.
 
