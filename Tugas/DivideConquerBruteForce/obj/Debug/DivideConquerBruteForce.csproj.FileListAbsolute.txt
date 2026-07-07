@@ -1,0 +1,11 @@
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\bin\Debug\DivideConquerBruteForce.exe.config
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\bin\Debug\DivideConquerBruteForce.exe
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\bin\Debug\DivideConquerBruteForce.pdb
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\obj\Debug\DivideConquerBruteForce.csproj.AssemblyReference.cache
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\obj\Debug\DivideConquerBruteForce.Properties.Resources.resources
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\obj\Debug\DivideConquerBruteForce.csproj.GenerateResource.cache
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\obj\Debug\DivideConquerBruteForce.csproj.CoreCompileInputs.cache
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\obj\Debug\DivideConquerBruteForce.exe
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\obj\Debug\DivideConquerBruteForce.pdb
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\obj\Debug\DivideConquerBruteForce.exe.config
+C:\Users\mkhan\OneDrive\Dokumen\Semester 2\Pemrograman Lanjut\DivideConquerBruteForce\obj\Debug\DivideConquerBruteForce.Form1.resources
