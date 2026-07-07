@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Data.SqlClient;
+using AlkimiaLab.Repositories;
 
 namespace AlkimiaLab.Services
 {
@@ -9,9 +10,16 @@ namespace AlkimiaLab.Services
     
     public class AuthService
     {
-      
+
+        private readonly UserRepository repository;
+
+        public AuthService()
+        {
+            repository = new UserRepository();
+        }
+
         /// Mendaftarkan user baru. 
-        
+
         public bool Register(string nama, string password, out string errorMessage)
         {
             errorMessage = null;
@@ -24,34 +32,15 @@ namespace AlkimiaLab.Services
 
             try
             {
-                using (var conn = DatabaseHelper.GetConnection())
+                if (repository.UsernameExists(nama))
                 {
-                    conn.Open();
-
-                    // Cek apakah nama sudah dipakai
-                    string checkQuery = "SELECT COUNT(*) FROM users WHERE nama = @nama";
-                    using (var checkCmd = new MySqlCommand(checkQuery, conn))
-                    {
-                        checkCmd.Parameters.AddWithValue("@nama", nama);
-                        long count = Convert.ToInt64(checkCmd.ExecuteScalar());
-                        if (count > 0)
-                        {
-                            errorMessage = "Nama tersebut sudah digunakan.";
-                            return false;
-                        }
-                    }
-
-                    // Insert user baru
-                    string insertQuery = "INSERT INTO users (nama, password) VALUES (@nama, @password)";
-                    using (var insertCmd = new MySqlCommand(insertQuery, conn))
-                    {
-                        insertCmd.Parameters.AddWithValue("@nama", nama);
-                        insertCmd.Parameters.AddWithValue("@password", password);
-                        insertCmd.ExecuteNonQuery();
-                    }
-
-                    return true;
+                    errorMessage = "Nama tersebut sudah digunakan.";
+                    return false;
                 }
+
+                repository.Register(nama, password);
+
+                return true;
             }
             catch (Exception ex)
             {
@@ -60,45 +49,23 @@ namespace AlkimiaLab.Services
             }
         }
 
-        
+
         /// Melakukan login. 
-        
+
         public User Login(string nama, string password, out string errorMessage)
         {
             errorMessage = null;
 
             try
             {
-                using (var conn = DatabaseHelper.GetConnection())
+                User user = repository.Login(nama, password);
+
+                if (user == null)
                 {
-                    conn.Open();
-
-                    string query = "SELECT id, nama, password, created_at FROM users WHERE nama = @nama AND password = @password";
-                    using (var cmd = new MySqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@nama", nama);
-                        cmd.Parameters.AddWithValue("@password", password);
-
-                        using (var reader = cmd.ExecuteReader())
-                        {
-                            if (reader.Read())
-                            {
-                                return new User
-                                {
-                                    Id = reader.GetInt32("id"),
-                                    Nama = reader.GetString("nama"),
-                                    Password = reader.GetString("password"),
-                                    CreatedAt = reader.GetDateTime("created_at")
-                                };
-                            }
-                            else
-                            {
-                                errorMessage = "Nama atau password salah.";
-                                return null;
-                            }
-                        }
-                    }
+                    errorMessage = "Nama atau password salah.";
                 }
+
+                return user;
             }
             catch (Exception ex)
             {
