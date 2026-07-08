@@ -1,5 +1,4 @@
 ﻿using AlkimiaLab.Models;
-using MySql.Data.MySqlClient;
 using System;
 using System.Data.SqlClient;
 using AlkimiaLab.Repositories;

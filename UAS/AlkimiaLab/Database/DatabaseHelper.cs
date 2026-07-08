@@ -1,9 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Configuration;
-using System.Data.SqlClient;
 
-namespace AlkimiaLab.Services
+namespace AlkimiaLab.Database
 {
     
     /// Helper untuk membuka koneksi ke database MySQL alkimia_lab.
